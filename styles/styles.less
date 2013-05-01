@@ -37,6 +37,14 @@ input[type|=text] {
     color: @lightYellow;
     text-align: center;
     width: 100px;
+    border: 2px solid @darkGray;
+    cursor: pointer;
+
+    &:focus, &:hover {
+        border: 2px solid red;
+    }
+
+    .border-box;
 }
 
 
@@ -59,7 +67,6 @@ input[type|=text] {
     margin-top: 40px;
     background: @mud;
     padding: 20px;
-    min-height: 160px;
     color: @lightYellow;
     font-family: monospace;
 }

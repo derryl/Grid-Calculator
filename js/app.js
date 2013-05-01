@@ -6,7 +6,8 @@ $(document).ready( function() {
         num_cols_field = form.find("#num_cols"),
         col_width_field = form.find("#col_width"),
         gut_width_field = form.find("#gut_width"),
-        output = $(".results");
+        output = $(".results"),
+        preview = $(".preview .row");
 
 
     function calculateWidth(num_cols, col_width, gut_width) {
@@ -20,7 +21,31 @@ $(document).ready( function() {
         html = "This grid will be " + totalWidth + "px wide.";
 
         output.html(html);
+
+        showPreview(num_cols, col_width, gut_width)
     }
+
+
+    function showPreview(num_cols, col_width, gut_width) {
+
+        preview.empty();
+
+        html = "<div class='col' ";
+        html += "style='";
+        html += "width: " + col_width + "px; ";
+        html += "margin-left: " + gut_width + "px; ";
+        html += "'></div>";
+
+        var i = 0;
+
+        for (; i < num_cols; i++) {
+            preview.append(html);
+        }
+
+        preview.attr("style","margin-left: -" + gut_width + "px");
+
+    }
+
 
     $("a.submit").click( function() {
 
