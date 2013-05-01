@@ -20,28 +20,30 @@ form {
     label, input {
         display: block;
         .pull-left;
-        padding: 15px;
     }
 }
 
 label { 
     width: 160px;
     font-size: 1.2em;
+    padding: 15px;
 }
 
 input[type|=text] {
     outline: none;
     border: none;
+    padding: 10px 15px;
     font-size: 1em;
+    font-weight: 600;
     background: @darkGray;
     color: @lightYellow;
     text-align: center;
     width: 100px;
-    border: 2px solid @darkGray;
+    border: 5px solid @darkGray;
     cursor: pointer;
 
-    &:focus, &:hover {
-        border: 2px solid red;
+    &:focus {
+        background: @mud;
     }
 
     .border-box;

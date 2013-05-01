@@ -149,6 +149,26 @@ table {
 .clearfix:after {
   clear: both;
 }
+::-moz-selection {
+  background: #EE4938;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #EE4938;
+  color: #fff;
+  text-shadow: none;
+}
+input ::-moz-selection {
+  background: #EE4938;
+  color: #fff;
+  text-shadow: none;
+}
+input ::selection {
+  background: #EE4938;
+  color: #fff;
+  text-shadow: none;
+}
 .centered {
   margin: 0 auto;
 }
@@ -282,28 +302,29 @@ form {
 .input-group input {
   display: block;
   float: left;
-  padding: 15px;
 }
 label {
   width: 160px;
   font-size: 1.2em;
+  padding: 15px;
 }
 input[type|=text] {
   outline: none;
   border: none;
+  padding: 10px 15px;
   font-size: 1em;
+  font-weight: 600;
   background: #262522;
   color: #faf5db;
   text-align: center;
   width: 100px;
-  border: 2px solid #262522;
+  border: 5px solid #262522;
   cursor: pointer;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-input[type|=text]:focus,
-input[type|=text]:hover {
-  border: 2px solid red;
+input[type|=text]:focus {
+  background: #3d3a27;
 }
 .btn {
   display: block;
