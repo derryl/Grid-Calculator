@@ -1,0 +1,323 @@
+font-size: 62.5%;
+font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+line-height: 1.5em;
+-webkit-font-smoothing: antialiased;/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../../app/styles/reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../../app/styles/reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* line 31, ../../app/styles/reset.scss */
+body {
+  line-height: 1;
+}
+/* line 34, ../../app/styles/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+/* line 37, ../../app/styles/reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+/* line 41, ../../app/styles/reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* line 45, ../../app/styles/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.centered {
+  margin: 0 auto;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+@include clearfix;
+.row {
+  position: relative;
+  height: 100%;
+  text-align: left;
+  margin: 20px auto;
+  margin-left: -20px;
+}
+[class*="span"] {
+  display: block;
+  float: left;
+  margin: 0;
+  min-height: 1px;
+  position: relative;
+  padding-left: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.span1 {
+  width: 8.33%;
+}
+.span2 {
+  width: 16.66%;
+}
+.span3 {
+  width: 25%;
+}
+.span4 {
+  width: 33.33%;
+}
+.span5 {
+  width: 41.66%;
+}
+.span6 {
+  width: 50%;
+}
+.span7 {
+  width: 58.33%;
+}
+.span8 {
+  width: 66.66%;
+}
+.span9 {
+  width: 75%;
+}
+.span10 {
+  width: 83.33%;
+}
+.span11 {
+  width: 91.66%;
+}
+.span12 {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #262522;
+  font-weight: 800;
+  margin-bottom: 0.325em;
+  line-height: 1.1em;
+  letter-spacing: -0.05em;
+}
+h1.flush-bottom,
+h2.flush-bottom,
+h3.flush-bottom,
+h4.flush-bottom {
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 2.875em;
+}
+h2 {
+  font-size: 4.000em;
+}
+h3 {
+  font-size: 4.000em;
+}
+h4 {
+  font-size: 2.75em;
+}
+p {
+  margin: 1em 0;
+  font-size: 2em;
+  line-height: 1.25em;
+  letter-spacing: -0.03em;
+  max-width: 50em;
+}
+body {
+  background: #faf5db;
+  color: #262522;
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+form {
+  margin: 20px 0;
+}
+.input-group {
+  display: block;
+  zoom: 1;
+}
+.input-group:before,
+.input-group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.input-group:after {
+  clear: both;
+}
+.input-group label,
+.input-group input {
+  display: block;
+  float: left;
+  padding: 15px;
+}
+label {
+  width: 160px;
+  font-size: 1.2em;
+}
+input[type|=text] {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  background: #262522;
+  color: #faf5db;
+  text-align: center;
+  width: 100px;
+}
+.btn {
+  display: block;
+  width: 320px;
+  padding: 20px 40px;
+  text-align: center;
+  /*background: @darkGray;
+    color: @lightYellow;*/
+
+  font-weight: 900;
+  color: #262522;
+  border: 5px solid #262522;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.results {
+  margin-top: 40px;
+  background: #3d3a27;
+  padding: 20px;
+  min-height: 160px;
+  color: #faf5db;
+  font-family: monospace;
+}

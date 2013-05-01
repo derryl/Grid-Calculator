@@ -1,0 +1,46 @@
+.centered { margin: 0 auto; }
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+// 12-column flexible grid
+@gridGutterWidth: 20px;
+@vertSpacing: 20px;
+
+.row, [class*="span"] {
+    @include clearfix;
+}
+
+.row { 
+    position: relative;
+    height:       100%;
+    text-align:   left;
+    margin: @vertSpacing auto;
+    margin-left: @gridGutterWidth * -1;
+}
+
+[class*="span"] {
+    display: block;
+    float: left;
+    margin: 0;
+    min-height: 1px;
+    position: relative;
+    padding-left: @gridGutterWidth;
+    .border-box;
+}
+
+.span1  { width: 8.33%;  }
+.span2  { width: 16.66%; }
+.span3  { width: 25%;    }
+.span4  { width: 33.33%; }
+.span5  { width: 41.66%; }
+.span6  { width: 50%;    }
+.span7  { width: 58.33%; }
+.span8  { width: 66.66%; }
+.span9  { width: 75%;    }
+.span10 { width: 83.33%; }
+.span11 { width: 91.66%; }
+.span12 { width: 100%;   }

@@ -1,0 +1,65 @@
+body {
+    background: @lightYellow;
+    color: @darkGray;
+}
+
+@bodyWidth: 320px;
+
+.container {
+    width: @bodyWidth;
+    margin: 0 auto;
+}
+
+form {
+    margin: 20px 0;
+}
+
+.input-group {
+    display: block;
+    .clearfix;
+    label, input {
+        display: block;
+        .pull-left;
+        padding: 15px;
+    }
+}
+
+label { 
+    width: 160px;
+    font-size: 1.2em;
+}
+
+input[type|=text] {
+    outline: none;
+    border: none;
+    font-size: 1em;
+    background: @darkGray;
+    color: @lightYellow;
+    text-align: center;
+    width: 100px;
+}
+
+
+.btn {
+    display: block;
+    width: @bodyWidth;
+    padding: 20px 40px;
+    text-align: center;
+    /*background: @darkGray;
+    color: @lightYellow;*/
+    font-weight: 900;
+    color: @darkGray;
+    border: 5px solid @darkGray;
+    text-decoration: none;
+    text-transform: uppercase;
+    .border-box;
+}
+
+.results {
+    margin-top: 40px;
+    background: @mud;
+    padding: 20px;
+    min-height: 160px;
+    color: @lightYellow;
+    font-family: monospace;
+}
